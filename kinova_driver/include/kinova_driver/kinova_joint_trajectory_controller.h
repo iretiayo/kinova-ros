@@ -49,6 +49,7 @@ private:
     std::string traj_frame_id_;
     std::vector<trajectory_msgs::JointTrajectoryPoint> traj_command_points_;
     control_msgs::FollowJointTrajectoryFeedback traj_feedback_msg_;
+    bool stop_;
 
     // stores the command to send to robot, in Kinova type (KinovaAngles)
     std::vector<KinovaAngles> kinova_angle_command_;
